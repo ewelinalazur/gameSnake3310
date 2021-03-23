@@ -1,7 +1,6 @@
 const canvas = document.getElementById('game');
 const ctx = canvas.getContext('2d');
 
-
   class SnakePart{
     constructor(x, y){
       this.x = x;
@@ -98,7 +97,7 @@ const ctx = canvas.getContext('2d');
   }
 
   function clearScreen() {
-    ctx.fillStyle = '#00b300';
+    ctx.fillStyle = '#F0D7A4';
     ctx.fillRect(0,0, canvas.width, canvas.height);
   }
 
@@ -138,6 +137,7 @@ const ctx = canvas.getContext('2d');
   }
 
   document.body.addEventListener('keydown', keyDown);
+
 
   function keyDown(event) {
     if(event.keyCode == 38){
